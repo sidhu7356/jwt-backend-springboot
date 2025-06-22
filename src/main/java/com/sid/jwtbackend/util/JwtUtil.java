@@ -19,7 +19,7 @@ public class JwtUtil {
         return Keys.hmacShaKeyFor(SECRET.getBytes()); // Placeholder, replace with actual key generation logic
     }
 
-    private String generateToken(String username) {
+    public String generateToken(String username) {
         // Implement the logic to generate a JWT token using the signing key and username
         // This could involve using a library like JJWT to create the token
         return Jwts.builder()
