@@ -29,7 +29,7 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(withDefaults())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**","/h2-console/**").permitAll()  // Allow login & register
+                        .requestMatchers("/api/auth/**").permitAll()  // Allow login & register
                         .anyRequest().authenticated()                // All other endpoints need auth
                 )
                 .sessionManagement(sess -> sess
