@@ -7,6 +7,8 @@ function Login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  <h1 className="text-4xl text-green-600 font-bold">Hello Tailwind!</h1>
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
